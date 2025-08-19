@@ -46,7 +46,8 @@ const missiles = [
   { name: "R-27EA", counter: ["chaff", "chaffs"] },
   { name: "AA-10EA", counter: ["chaff", "chaffs"] },
   { name: "Sky Sword 2", counter: ["chaff", "chaffs"] },
-  { name: "TC-2", counter: ["chaff", "chaffs"] }
+  { name: "TC-2", counter: ["chaff", "chaffs"] },
+  { name: "guns", counter: ["evade"] }
 ];
 
 let currentMissile = null;
