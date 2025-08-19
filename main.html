@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Geo-Fs Missile Trainer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Missile Trainer</h1>
+      <p>In accordance with GMRP JAMRR Section 11.2</p>
+    </header>
+    
+    <div class="game-container">
+      <div class="missile-name" id="missileName">Ballistic Missile</div>
+      
+      <div class="counter-input">
+        <input type="text" id="counterInput" placeholder="Enter countermeasure..." autocomplete="off">
+        <button class="submit-button" id="submitButton">Submit</button>
+      </div>
+      
+      <div class="game-stats">
+        <div class="timer-display" id="timerDisplay">Time: 10s</div>
+        <div class="score-display">
+          Score: <span class="score-value" id="score">0</span>
+        </div>
+      </div>
+      
+      <div class="feedback" id="feedback"></div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <a href="#" class="Github" onclick="Url1()">Github</a>
+    <a href="#" class="Discord" onclick="Url2()">Discord</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
