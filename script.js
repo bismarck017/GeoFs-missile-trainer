@@ -168,7 +168,12 @@ function Url3() {
 }
 
 function Url4() {
-    window.location.href = "main.html";
+    window.location.href = "counters.html";
+}
+
+function Url5() {
+    window.location.href = "home.html";
+
 }
 
 displayNewMissile();
