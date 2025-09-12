@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GeoFs Missile Trainer - Firing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Firing Trainer</h1>
+      <p>In accordance with GMRP JAMRR Section 11.2</p>
+    </header>
+    
+    <div class="game-container">
+      <div class="lock-status" id="lockStatus"></div>
+      
+      <div class="counter-input">
+        <input type="text" id="fireInput" placeholder="Press Enter to fire..." autocomplete="off">
+        <button class="submit-button" id="fireButton">Fire</button>
+        <button class="end-button" id="endButton">End</button>
+      </div>
+      
+      <div class="game-stats">
+        <div class="timer-display" id="timerDisplay">Time: 0s</div>
+        <div class="score-display">
+          Shots: <span class="score-value" id="score">0</span>
+        </div>
+      </div>
+      
+      <div class="feedback" id="feedback"></div>
+    </div>
+  </div>
+  
+  <div class="results-section" id="resultsSection">
+    <h2>Results (beta)</h2>
+    <div class="chart-container">
+      <canvas id="performanceChart"></canvas>
+    </div>
+    <div class="stats-container">
+      <div class="stat-box">
+        <div class="stat-label">WPM</div>
+        <div class="stat-value" id="wpmValue">0</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Accuracy</div>
+        <div class="stat-value" id="accuracyValue">0%</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Response Time (average)</div>
+        <div class="stat-value" id="responseTimeValue">0s</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <a href="#" class="Github" onclick="Url1()">Github</a>
+    <a href="#" class="Missiles" onclick="Url5()">Home</a>
+    <a href="#" class="Discord" onclick="Url2()">Discord</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script1.js"></script>
+</body>
+</html>
