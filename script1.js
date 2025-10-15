@@ -47,6 +47,18 @@ const missiles = [
         "AA-10EA",
         "Sky Sword 2",
         "TC-2",
+        "SM-2",
+        "SM-6",
+        "RIM-7",
+        "Sea Sparrow",
+        "RIM-162",
+        "ESSM",
+        "Aster 15",
+        "Aster 30",
+        "S-300",
+        "S-350",
+        "HHQ-9",
+        "Barak 8",
   ];
   const callsigns = [
     "Blackjack",
