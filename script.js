@@ -129,7 +129,6 @@ function updateTimer() {
     feedback.textContent = `Time's up! ${currentMissile.name} was countered by ${correctAnswer}`;
     feedback.className = 'feedback incorrect';
     
-    // Record missed shot
     const endTime = new Date();
     const responseTime = (endTime - startTime) / 1000;
     totalResponseTime += responseTime;
