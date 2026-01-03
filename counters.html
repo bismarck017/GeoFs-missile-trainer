@@ -22,6 +22,7 @@
       <div class="counter-input">
         <input type="text" id="counterInput" placeholder="Enter countermeasure..." autocomplete="off">
         <button class="submit-button" id="submitButton">Submit</button>
+        <button class="end-button" id="endButton">End</button>
       </div>
       
       <div class="game-stats">
@@ -34,6 +35,23 @@
       <div class="feedback" id="feedback"></div>
     </div>
   </div>
+
+  <div class="results-section" id="resultsSection">
+    <h2>Results (beta)</h2>
+    <div class="chart-container">
+      <canvas id="performanceChart"></canvas>
+    </div>
+    <div class="stats-container">
+      <div class="stat-box">
+        <div class="stat-label">Accuracy</div>
+        <div class="stat-value" id="accuracyValue">0%</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Response Time (average)</div>
+        <div class="stat-value" id="responseTimeValue">0s</div>
+      </div>
+    </div>
+  </div>
   
   <div class="footer">
     <a href="#" class="Github" onclick="Url1()">Github</a>
@@ -41,6 +59,7 @@
     <a href="#" class="Discord" onclick="Url2()">Discord</a>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
   <script src="scriptMisc.js"></script>
 </body>
