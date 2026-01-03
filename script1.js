@@ -157,7 +157,7 @@ const missiles = [
     }
     
     if (!trainingStartTime) {
-      trainingStartTime = new Date();
+      trainingStartTime = performance.now();
     }
     
     currentTarget = getRandomTarget();
